@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tophat News | EXPOSED!</title>
+<style>
+html, body { margin:0; padding:0; height:100%; }
+body { font-family: Arial, sans-serif; background:#f9f9f9; color:#333; display:flex; flex-direction:column; }
+
+header { background:#2c3e50; color:white; padding:20px 0; text-align:center; }
+header h1 { margin:0; font-size:2rem !important; }
+
+nav { display:flex; justify-content:center; background:#34495e; }
+nav a { color:white; text-decoration:none; padding:15px 20px; display:block; transition:0.3s; }
+nav a:hover { background:#1abc9c; }
+
+main { flex:1; padding:20px; }
+
+article img { width:80%; max-width:400px; display:block; margin:0 auto; }
+h2 { font-size:1.5rem !important; text-align:center; margin-bottom:20px; }
+article h3 { font-size:1.2rem !important; margin:15px 0; text-align:center; }
+article p { margin:0 15px 15px 15px; line-height:1.5; }
+
+footer { text-align:center; background:#171717; color:white; padding:20px; font-size:0.9rem; }
+</style>
+</head>
+<body>
+
+<header><h1>🎩|Tophat News|🎩</h1></header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="main.html">Breaking News</a>
+<a href="gaming.html">Gaming</a>
+<a href="technology.html">Technology</a>
+<a href="roblox.html">Roblox</a>
+</nav>
+
+<main>
+<article>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABDlBMVEX///8DAAHxbXzxbHzwbnzwbnoEAAH+/PzybHz+9vf99PX++vvxbHr19fXr6+v4+Pje3t7+5ejk5OTT09O3t7eVlJQbGRmqqqr5x8798PH0kZzCwsKBgYF5eHgRDw/83uL3tbzxdYT61Nn1oaoVAADKysqZmZkzMjJPTk5jYmI8OjpcWlpvbm6urq784uTnZnfyhJH4vsT2rrb2l6IqDRCmT1vhaXcmJiZoaGhBQUEsKipVVFSVlZX51drqzM7Xpavcs7j0fYz2lKH2ipXxdn0dBwcnCQ5BFh5aJi90MjiIPkWoUVxtLDDMYG+6V2dHGRmBPUOiT1RMHynEXW80ExFkQUMzHiHTu77VcXymlJjvYUHbAAAJLklEQVR4nO2cCVviyhKGtbsDAcKwb2ENm+LGptHR68xB3BU9zp27/f8/cqs7CypE0JNouLfeZx6fBCekv+76qipIsraGIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIIgz0XirmE6ni6lv7z82lky1isVWKhlzf1xukcp0NtYFh5vldPRdx8bbR9+z/NDs1lE77tEA/yLxkinPILuZW15jqvzi2I2yDzVGc9/XX5HttJYLuGRm4/WxW++Yns8hXoIQCwQCL8e50V7Cj7HiduC1wPX1is+WMdWxB1k5zFbeM85o7tkCVqaHrm+3PmPky1K2o2snk8u1yyeH1gud1NtHfstk7WO3y5lMqWML3v5AQvYMU+FxyXRecnfn2BznyZsSv5UsPZuZorBetFgyD/3uJ4VFsRCd4jSzRIvWum6+EahRS+DWswoRK3bEa5mgl0N+J7H2cbaz+3LOo+lNcxUdJVoCs6WXC/1tFw49Snoz1g8Si8dnYypueqzjMNbo34zEclKcqSrJ1Efaos8nmjaKZGl+ccsdGgvor8V6J6kdvkzZ9rzS3xLy/Vfb34lRDTaKs79Jdoyq56d88iFibV7gtmciMZbhFX7HX53LBxFmTL9+NZ7lFlyJdLKYVDk7RyGU9FW34JRoKjWjJVZMJ1feggiCIAiCIAiCIAiCIJ9O5DQPnEbETqjOd6piJyR+8SPiyll+/AT+KIjt4I+f8Mb1sNjey9vbXhHJa7Isj06Nnb4md6l6am53u7R36sqHSnsqlWWtZig57XW73VE/Ym9rfXfm0YFQDSRSNSF2wg3YYUOxEx4wSulZwpWz1HuEyFpeTFckP2KM9ep8O5gf8Qmuu3ISJwoNKiusYYTQ3pksEzYQO4khKGQNV0IIIoIx0quKndBAI5SqYicME6wo46obJ3GkOpYJ1Wohvh3kk020vNg57SmSMnInhMINwiQ2NOaxMJQUZk5qosEkyZpgj+CRQunIDKH+iBBlbPgyr0mS0nMnhBJnEJpsYExXdazAPBpzV1UZYVrf02xjWPHMiJQCDyHJsuI5SBy6ZUXGpKkVCaGWFXuUyL28p9mm0CDccaYVh4ROrSgBA5esOGIQEcY8hmtMJsS2IoSN6rkVKTWzebA+VhRZ65tWhJNr7sxvuMEUiZoRUWjIzLIiTDAhrOFOqDhhWlFsB0WJtEJIk5lilsu/SkIlUIsGYurAfrKkaH0RtHtgSyvXeUWkpkFpsEJowGRZOdsT2zVI80x1Z35Pe5RaVRHsB6Fi5DfI4Lwq5j39k1WhwaDtMLN5YgiTTexsTphrVfEczmIm6nDtXLGsCLkO5Pa8teKeSiBqrMZqTHkIGdl8DPZxqbEK8T6J2VZktv0KDUmhVrn0CIgUXt/NSIFszq0oQig/UiTZpapYGPKkYloRJhWqomE/2KbEYyuG+yNFsZJ2eKBB0Br2C9VEg7rnyllOoSpaCSZSB18SoxKCLSFrjzyuigNJUSQzaXP7EWJURWiyJOpSYwXJmSlWnwT2I7JiW5E3U15bUYGuw7YilORz04o9RabuWZEoypllRUmR7arIKPO4KvK2m1kNKu9WIWyEFbktCXPpGse4ZDH7pD1V4vYTc5dQeRPgcVXkbbeVVHgzJctjYT8IIei4xi5VxTFINK1o2E+zqiJhRPO8KkI8Dm0rQgq3QwhqhltWHFGqGIl6LdSHSiiNq3xHXESynjsNlBOJIe9JzRCqqpB6zAxeVaGWnLsTQvzTA4mYyZlXRYU0rI8VGJFdupZxoj5+1mrnef0wGytosghx61oR5lExL1/gWgZaRDO/JYZs2rl6RCjf0zRNrRoFqzaCHWNOQ32x7U5VhKteTTOLH1zLwBub14d1VeO/cOUkTkQSHLMNDYmd0LNtdy7FgwX+XoXgzI657cpJEARBEARBEARBvpRYMp5qFdO7uXY7kykB5RfwVzKZdju3my62UvHkytwfFEumirvtTGnn6PthNputVObcav+SQKVSyWYPtzo75VI7l27F/ay1WD7ZWqhoIcebR6U5tyv6glxl8fiXo/TVUhxoZRePfTl2v1qKA99mHuDxQSoLHsTwZcROXFK44ddbS2OlxYNfio5v8+muS6km49sHKcUPF49+CQJ+LRaQatwx4oZ/b2GPumPEI78mGiDtYETj+UoBe+9thW0f3+Md33JWKP6ZzHmm1JSsf20IRiw7DRs0NZsX+4LLi2bTFDoP5+fZ+IFdpyVsXl5d39w+HRzcHRzc3lxf7V80nST6t1ZwUnPDNHB5dX/7MNEFkq5PJg8HN4/7zbkSszMPmPAVs9kU3Hd5ffugd7v8mzeM8Z+Esq7+cHv/+2KOxtnHoPiL2Wza/AX6mGRqA3Xih0y7+uT2ej8wk1kzXy1hAfHtV0v4++ZuwiRpqtCGUv3hz6uLV3bc8tWD6ObRfrmAV7cTHfQp7LVCRmSZ6pOn61eRWvZt122Rsp8QCQNvPj5NmGG+10vIIFJlwvQ7iNTAtAs49Hee4QRLU4XNX086/yr6G8j63f3+s+K47fslXFtrHdsSHw9A4NsKFaY/3F/aCit+/fziBWUzRNevYAXJIoWS0n24ttPNyQosITjx2FC4fzuBDMNVAE4KGfwX/eCXWfwr/nehIGOk0Zu/d0V6UfjtJs6LCOr129/GEu6sxBKurSX5IyEDvx50yqSFCjl0cn/BJW74vhZapLM8RnUqL7GGAv3psQmTMvfhg74EutPA44NVBBcrZNLk5sL5GZl+JH5y+adOoS97M8tMo5TqB4/rW36+8p2h+I87ndLlFbLJ/T9zXz3odxH8178lGDhVllJIJEl/+s+K5FGLSF/jypZTyIviTx9/wDYffsfp4sUzo1SWBiv4ddgwv9FsSYke38LsFctL1FZxBTkh8cX9RbHKb4ZZUYH8+/X8MRALJCq9vKe3FXhMgj9f4i19stbw9j40z4nkz4izGRWievsMgU+h0FfZfI0KGde8vbXnkwgm8g1NtHDPYUwb9que3gv6iQQL9dqZZn6eqMhCnlqrF3z8V7T3EylU87VBQx2r6tmwUctXC6ucQJ0IRiKRUAh+RP6nFg9BEARBEARBEARBEARBEARBEARBEARBEARBEARBkP8r/gtqructRrrsAQAAAABJRU5ErkJggg==">
+<h3>Roblox classic faces gone?</h3>
+<p>Roblox has removed classic faces for the makeup update, and they have increased prices for items to hide it and make it seem like they did this for money, and now we have VERY CRAPPY Roblox faces which do not look good whatsoever, but you can turn off the facial animations, but still we should protest this update.</p>
+</article>
+</main>
+
+<footer>2026 Tophat News — top-hat.org</footer>
+
+</body>
+</html>
