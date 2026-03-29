@@ -1,235 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tophat News</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tophat News</title>
+<style>
+html, body { margin:0; padding:0; height:100%; }
+body { font-family: Arial, sans-serif; background:#f9f9f9; color:#333; display:flex; flex-direction:column; }
 
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
+header { background:#2c3e50; color:white; padding:20px 0; text-align:center; }
+header h1 { margin:0; font-size:2rem !important; }
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
+nav { display:flex; justify-content:center; background:#34495e; }
+nav a { color:white; text-decoration:none; padding:15px 20px; display:block; transition:0.3s; }
+nav a:hover { background:#1abc9c; }
 
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #34495e;
-        }
+main { flex:1; padding:20px; }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 15px 20px;
-            display: block;
-            transition: background 0.3s;
-        }
+.top-story, .section-preview { display:flex; flex-wrap:wrap; background:#ecf0f1; margin:20px 0; border-radius:8px; overflow:hidden; }
+.top-story img, .section-preview img { max-width:300px; width:100%; object-fit:cover; flex:1; }
+.top-story-content, .section-content { padding:20px; flex:2; }
 
-        nav a:hover {
-            background-color: #1abc9c;
-        }
+h2 { font-size:1.4rem !important; margin-top:0; }
+section h2 { font-size:1.5rem !important; text-align:center; margin-bottom:30px; }
+article h3 { font-size:1.1rem !important; margin:15px; }
+article p { margin:0 15px 15px 15px; line-height:1.5; }
 
-        .top-story {
-            display: flex;
-            flex-wrap: wrap;
-            background-color: #ecf0f1;
-            margin: 20px;
-            border-radius: 8px;
-            overflow: hidden;
-        }
+footer { text-align:center; background:#171717; color:white; padding:20px; font-size:0.9rem; }
 
-        .top-story img {
-            max-width: 400px;
-            width: 100%;
-            object-fit: cover;
-            flex: 1;
-        }
-
-        .top-story-content {
-            padding: 20px;
-            flex: 2;
-        }
-
-        .top-story-content h2 {
-            margin-top: 0;
-        }
-
-        section {
-            padding: 40px 20px;
-        }
-
-        section h2 {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 30px;
-        }
-
-        section.articles {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        article {
-            background-color: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 0 10px rgba(43, 43, 43, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        article:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-        }
-
-        article img {
-            width: 100%;
-        }
-
-        article h3 {
-            margin: 15px;
-        }
-
-        article p {
-            margin: 0 15px 15px 15px;
-        }
-
-        footer {
-            text-align: center;
-            background-color: #171717;
-            color: white;
-            padding: 20px;
-            margin-top: 20px;
-            font-size: 0.9rem;
-        }
-
-        @media(max-width: 768px){
-            .top-story {
-                flex-direction: column;
-            }
-        }
-    </style>
+/* responsive */
+@media(max-width:768px){ .top-story, .section-preview{ flex-direction:column; } }
+</style>
 </head>
 <body>
-    <header>
-        <h1>🎩|Tophat News|🎩</h1>
-    </header>
 
-    <nav>
-        <a href="#main">Main Place</a>
-        <a href="#gaming">Gaming</a>
-        <a href="#business">Business</a>
-        <a href="#technology">Technology</a>
-    </nav>
+<header><h1>🎩|Tophat News|🎩</h1></header>
 
-    <!-- Main Section -->
-    <div id="main" class="top-story">
-        <img src="https://media.gettyimages.com/id/1357914666/photo/shot-of-a-handsome-young-man-dancing-against-a-blue-background.jpg?s=612x612&w=gi&k=20&c=zvWIdZ32JdfvrQ9-aLE3WLshrhDWv-BgA2EjTobuEPo=" alt="Tophat News top hit!">
-        <div class="top-story-content">
-            <h2>Breaking News: NEW NEW'S WEBSITE TOPHAT NEWS IS ONLINE</h2>
-            <p>In a quiet corner of the internet, a new website has just gone live: top-hat.org. At first glance, it may seem like just another personal project, but behind the scenes lies a story that reflects a growing trend—young creators building their own spaces online, learning as they go, and facing the unexpected hurdles of modern web development.
+<nav>
+<a href="index.html">Home</a>
+<a href="main.html">Breaking News</a>
+<a href="gaming.html">Gaming</a>
+<a href="technology.html">Technology</a>
+</nav>
 
-The creator of top-hat.org started with a simple goal: take a custom-built HTML page and turn it into a real, working website. No large team, no expensive hosting—just raw curiosity and determination. But as many first-time developers discover, owning a domain name is only the beginning.
+<main>
+<!-- Preview: Breaking News -->
+<div class="top-story">
+<img src="https://media.gettyimages.com/id/1357914666/photo/shot-of-a-handsome-young-man-dancing-against-a-blue-background.jpg?s=612x612&w=gi&k=20&c=zvWIdZ32JdfvrQ9-aLE3WLshrhDWv-BgA2EjTobuEPo=">
+<div class="top-story-content">
+<h2>Breaking News: top-hat.org Goes Live!</h2>
+<p>Top-hat.org is online! Read the full story on <a href="main.html">Breaking News</a>.</p>
+</div>
+</div>
 
-A domain, by itself, doesn’t actually “host” a website. It’s more like an address without a house. To turn that address into something visitors can see, the creator had to find a way to store and serve their HTML files. That’s where platforms like GitHub Pages come in—offering free hosting for simple websites.
+<!-- Preview: Gaming -->
+<div class="section-preview">
+<img src="https://tr.rbxcdn.com/180DAY-2af925cfa9f3ae22df49e4d7919bc298/256/256/Image/Webp/noFilter">
+<div class="section-content">
+<h2>Gaming: Anime Overload</h2>
+<p>New Roblox tower defense game “Anime Overload” is exciting players! <a href="gaming.html">Read More</a></p>
+</div>
+</div>
 
-What sounded easy in theory quickly became a technical puzzle.
-Using GitHub for the first time can feel overwhelming. Designed originally for professional developers, GitHub introduces concepts like repositories, commits, and branches—terms that can confuse beginners who just want to upload a webpage.
+<!-- Preview: Technology -->
+<div class="section-preview">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_bF9Wqc8NECyM2arK7q4luZoRwTjU5BjPiw&s">
+<div class="section-content">
+<h2>Technology: Cat Stuck in Tree</h2>
+<p>A curious tech story involving a cat stuck in a tree… <a href="technology.html">Read More</a></p>
+</div>
+</div>
 
-For top-hat.org, the first hurdle was structure. The website wouldn’t appear correctly because the main file wasn’t named properly. On GitHub Pages, the homepage must be called index.html—a small but critical detail. Without it, visitors are left staring at errors instead of content.
+</main>
 
-Then came file placement. Even with the correct filename, putting it inside the wrong folder can break everything. The creator had to learn that GitHub Pages expects files in the “root” directory unless configured otherwise.
+<footer>2026 Tophat News — top-hat.org</footer>
 
-Another challenge was deployment time. Changes don’t always appear instantly, leading to confusion:
-
-“Did it upload?”
-“Is it broken?”
-“Did I do something wrong?”
-
-In reality, GitHub Pages often needs a short period to process updates. For newcomers, that delay can feel like a major issue.
-
-Despite these frustrations, each mistake became part of the learning process. Slowly, the pieces began to fall into place.
-After troubleshooting file names, adjusting settings, and connecting the domain, top-hat.org finally went live. A once-local HTML file became a real, accessible website—viewable by anyone with an internet connection.
-
-The success of the project highlights something bigger than just one website. It shows how accessible web creation has become, even without traditional servers or advanced infrastructure. Tools like GitHub Pages allow anyone to publish their ideas online, often for free.
-
-At the same time, the journey reveals an important truth: simplicity on the surface doesn’t always mean simplicity underneath. Even basic hosting platforms require an understanding of structure, naming conventions, and deployment workflows.
-
-For the creator of top-hat.org, the process wasn’t just about launching a site—it was about learning how the internet actually works behind the scenes. From DNS settings to file hierarchies, every step added a new layer of knowledge.
-
-Today, top-hat.org stands as more than just a website. It represents persistence, experimentation, and the willingness to figure things out step by step.
-
-And like many projects on the web, this is only the beginning.</p>
-        </div>
-    </div>
-
-    <!-- Gaming Section -->
-    <section id="gaming">
-        <h2>Gaming</h2>
-        <div class="articles">
-            <article>
-                <img src="https://tr.rbxcdn.com/180DAY-2af925cfa9f3ae22df49e4d7919bc298/256/256/Image/Webp/noFilter" alt="Article 2">
-                <h3>New Roblox Game: ANIME OVERLOAD</h3>
-                <p>This new game on roblox is a tower defense and is really good I have been playing since Release and I have had a very great time playing this game join with this link: https://www.roblox.com/games/126297188712308/Release-Anime-Overload</p>
-            </article>
-            <article>
-                <img src="https://image.spreadshirtmedia.net/image-server/v1/products/T1459A839PA4459PT28X11Y0D325826565W7780H10000/views/1,width=800,height=800,appearanceId=839,backgroundColor=F2F2F2/im-single.jpg" alt="Gaming 1">
-                <h3>Please I need one</h3>
-                <p>I am single and looking for a GF</p>
-            </article>
-        </div>
-    </section>
-
-    <!-- Business Section -->
-    <section id="business">
-        <h2>Business</h2>
-        <div class="articles">
-            <article>
-                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/..." alt="Business 1">
-                <h3>I am working on this website tophat.lol</h3>
-                <p>Coming soon May 2026</p>
-            </article>
-            <article>
-                <img src="https://via.placeholder.com/300x200" alt="Business 2">
-                <h3>Startup Growth Hits New Highs</h3>
-                <p>Startups in tech and AI are thriving this year.</p>
-            </article>
-        </div>
-    </section>
-
-    <!-- Technology Section -->
-    <section id="technology">
-        <h2>Technology</h2>
-        <div class="articles">
-            <article>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_bF9Wqc8NECyM2arK7q4luZoRwTjU5BjPiw&s" alt="Tech 1">
-                <h3>My cat is stuck in a tree</h3>
-                <p>The author is still researching this one</p>
-            </article>
-            <article>
-                <img src="https://via.placeholder.com/300x200" alt="Tech 2">
-                <h3>Top Gadgets Released This Year</h3>
-                <p>From phones to smart devices, 2026 is full of innovation.</p>
-            </article>
-        </div>
-    </section>
-
-    <footer>
-        2026 Tophat News. Domain not registered yet — content is placeholder.
-    </footer>
 </body>
 </html>
